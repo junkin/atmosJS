@@ -1,0 +1,3 @@
+This code is still in early days - please direct any questions/comments and bug fixes to scot.junkin@emc.com.
+
+These bindings are intended to support firefox based applications created with Javascript hosted on an ATmos system.  To be inline with the browser security model the bindings must be served off the same host which will be receiving the xmlhttprequest's back from the browser.  This means that the Atmos system will be serving the atmos.js file and a shareable url must be created which references that file.  
