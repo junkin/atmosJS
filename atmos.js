@@ -86,7 +86,7 @@ function AtmosRest(k,u, host) {
 	stringToSign += this.uid + "\n";
 	stringToSign += expiry;
 	sig = this.do_signature(stringToSign, this.key);
-	var shareable =  "http://accesspoint.emccis.com" + resource + "?uid=" + this.uid  + "&expires=" + expiry + "&signature=" + encodeURIComponent(sig);
+	var shareable =  this.endpoint + resource + "?uid=" + this.uid  + "&expires=" + expiry + "&signature=" + encodeURIComponent(sig);
 	return shareable;
     
     }
